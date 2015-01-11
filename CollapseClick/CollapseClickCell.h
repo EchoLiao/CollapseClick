@@ -25,6 +25,7 @@
 // Properties
 @property (nonatomic, assign) BOOL isClicked;
 @property (nonatomic, assign) int index;
+@property (nonatomic, assign) UIView *content;
 
 // Init
 + (CollapseClickCell *)newCollapseClickCellWithTitle:(NSString *)title index:(int)index content:(UIView *)content;

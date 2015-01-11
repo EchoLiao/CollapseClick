@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "CollapseClickCell.h"
+#import "CollapseClickSubList.h"
+#import "CollapseClickSubRange.h"
+#import "CollapseClickSubSlider.h"
 
 #define kCCPad 10
 
@@ -45,8 +48,11 @@
 @property (nonatomic, retain) NSMutableArray *isClickedArray;
 @property (nonatomic, retain) NSMutableArray *dataArray;
 
+
 // Methods
 -(void)reloadCollapseClick;
+-(void)reloadCollapseClickExceptIndex:(int)index;
+-(void)refreshCollapseClickTitle;
 -(CollapseClickCell *)collapseClickCellForIndex:(int)index;
 -(void)scrollToCollapseClickCellAtIndex:(int)index animated:(BOOL)animated;
 -(UIView *)contentViewForCellAtIndex:(int)index;

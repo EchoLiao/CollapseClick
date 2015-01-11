@@ -29,6 +29,7 @@
     cell.index = index;
     cell.TitleButton.tag = index;
     cell.ContentView.frame = CGRectMake(cell.ContentView.frame.origin.x, cell.ContentView.frame.origin.y, cell.ContentView.frame.size.width, content.frame.size.height);
+	cell.content = content;
     [cell.ContentView addSubview:content];
     
     return cell;
